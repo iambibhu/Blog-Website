@@ -30,6 +30,7 @@ nav {
 
 nav ul {
     display: flex;
+    align-items: center;
     gap: 2rem;
     list-style: none;
 }
@@ -43,7 +44,7 @@ nav ul li:hover {
 }
 
 main {
-    max-width: 60%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -53,6 +54,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 30px;
 }
 
 .hero_content h1 {
@@ -188,4 +190,109 @@ article {
 a {
     text-decoration: none;
     color: #000;
+}
+
+@media screen and (width <= 425px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        max-width: 425px;
+        padding: 1rem 0.5rem;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 1.2rem;
+    }
+
+    .hero-section {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero_content h1 {
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+
+    .hero_content h4 {
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+
+    .hero-imgage img {
+        width: 400px;
+        border-radius: 5rem;
+        margin-top: 30px;
+        padding: 0 10px;
+    }
+
+    .h-card {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 1rem;
+    }
+
+    .v-card {
+        margin: 20px auto;
+    }
+
+    footer {
+        max-width: 400px;
+    }
+
+    .banner img {
+        padding: 10px;
+    }
+
+    .post h1 {
+        font-size: 1.7rem;
+        padding: 0 15px;
+    }
+
+    .post hr {
+        margin: 1rem 0;
+    }
+
+    article {
+        padding: 0 15px;
+    }
+
+    .about-author {
+        padding: 0 15px;
+    }
+}
+
+@media screen and (width: 768px) {
+    .hero-section {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero_content h1 {
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+
+    .hero_content h4 {
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+
+    .hero-imgage img {
+        margin-top: 30px;
+    }
+
+    .h-card {
+        margin: 20px auto;
+        padding: 0 10px;
+    }
+
+    .v-card {
+        margin: 20px auto;
+    }
 }
